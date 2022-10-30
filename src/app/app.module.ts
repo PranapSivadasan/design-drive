@@ -11,6 +11,7 @@ import { ProjectBasePageComponent } from './projects/project-base-page/project-b
 import { LogoBasePageComponent } from './projects/logo-base-page/logo-base-page.component';
 import { ProductBasePageComponent } from './projects/product-base-page/product-base-page.component';
 import { WebsiteBasePageComponent } from './projects/website-base-page/website-base-page.component';
+import { AssetsPageComponent } from './assets-page/assets-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { WebsiteBasePageComponent } from './projects/website-base-page/website-b
     ProjectBasePageComponent,
     LogoBasePageComponent,
     ProductBasePageComponent,
-    WebsiteBasePageComponent
+    WebsiteBasePageComponent,
+    AssetsPageComponent
   ],
   imports: [
     BrowserModule,

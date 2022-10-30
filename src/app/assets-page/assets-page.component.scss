@@ -1,0 +1,33 @@
+.assets {
+    .content {
+        p {
+            text-align: center;
+            font-weight: 800;
+
+            &.light {
+                font-weight: 700;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .pen-image {
+        height: 75vh;
+        position: absolute;
+        right: 2rem;
+    }
+
+    .pen-height {
+        height: calc(100vh - 80px - 130px);
+    }
+}
+
+@media (max-width: 768px) {
+    .pen-image {
+        display: none;
+    }
+
+    .pen-height {
+        height: 100% !important;
+    }
+}
