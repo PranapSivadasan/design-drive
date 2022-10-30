@@ -19,7 +19,6 @@ export class AppComponent implements AfterViewInit {
     scrollContainer?.addEventListener('wheel', (event) => {
       event.preventDefault();
       scrollContainer.scrollLeft += event.deltaY || event.deltaX;
-      console.log(event);
     });
   }
 

@@ -21,13 +21,13 @@ export class NavigationHeaderComponent implements OnInit {
         isActive: true
       },
       {
-        displayName: 'about',
-        hyperlink: '#about',
+        displayName: 'projects',
+        hyperlink: '#project',
         isActive: false
       },
       {
-        displayName: 'projects',
-        hyperlink: '#projects',
+        displayName: 'about',
+        hyperlink: '#about',
         isActive: false
       },
       {

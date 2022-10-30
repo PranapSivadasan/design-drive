@@ -7,6 +7,10 @@ import { NavigationHeaderComponent } from './navigation-header/navigation-header
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ProjectBasePageComponent } from './projects/project-base-page/project-base-page.component';
+import { LogoBasePageComponent } from './projects/logo-base-page/logo-base-page.component';
+import { ProductBasePageComponent } from './projects/product-base-page/product-base-page.component';
+import { WebsiteBasePageComponent } from './projects/website-base-page/website-base-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     NavigationHeaderComponent,
     HomePageComponent,
     AboutPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ProjectBasePageComponent,
+    LogoBasePageComponent,
+    ProductBasePageComponent,
+    WebsiteBasePageComponent
   ],
   imports: [
     BrowserModule,
