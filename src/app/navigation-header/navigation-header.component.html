@@ -1,0 +1,22 @@
+<nav class="navbar navbar-dark sticky-top bg-dark navbar-expand-lg" [ngClass]="{ 'transparent': !scrolled }">
+    <div class="container-fluid">
+        <a href="#home" class="navbar-brand" (click)="setActiveLink(0)">
+            <img src="../../assets/favicon.ico" alt="Design Drive Icon" height="32px">
+            <span class="mx-3">{{appConst.TITLE | uppercase}}</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-5 ms-auto mt-2 my-lg-0 navbar-nav-scroll">
+                <li class="pe-3" *ngFor="let navItem of navigationData; index as i">
+                    <a class="nav-link" href={{navItem.hyperlink}} [ngClass]="{ 'active' : navItem.isActive}"
+                        (click)="setActiveLink(i)">
+                        {{navItem.displayName | uppercase}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

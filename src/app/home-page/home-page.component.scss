@@ -1,0 +1,27 @@
+.home-page {
+    span {
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 0.7rem;
+    }
+
+    .pen-image {
+        position: absolute;
+        width: 100%;
+        top: -90%;
+        object-fit: scale-down;
+        right: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .flex-justify-end,
+    .flex-justify-start {
+        justify-content: center;
+    }
+
+    .pen-image {
+        display: none;
+    }
+}
