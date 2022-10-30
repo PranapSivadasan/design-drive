@@ -33,3 +33,19 @@ body {
     display: flex;
     justify-content: flex-start;
 }
+
+.arrow-text-btn {
+    color: white !important;
+    text-decoration: none;
+    padding: 0 0.25rem 0.25rem 0.25rem;
+
+    &::after {
+        content: url('./assets/arrowright.svg');
+        position: relative;
+        top: 6px;
+    }
+
+    &:hover {
+        background-color: rgb(256, 256, 256, 0.2) !important;
+    }
+}
