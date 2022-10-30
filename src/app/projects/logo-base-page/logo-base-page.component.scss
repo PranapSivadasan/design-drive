@@ -20,11 +20,9 @@
     }
 
     .pen-image {
-        min-height: 75vh;
-        max-height: 80vh;
-        position: relative;
-        top: 3rem;
-        right: 1rem;
+        max-height: 75vh;
+        position: absolute;
+        bottom: 0;
     }
 }
 

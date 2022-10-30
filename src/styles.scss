@@ -16,10 +16,11 @@ body {
 }
 
 .full-width {
-    min-width: calc(100vw - 25px) ;
+    min-width: calc(100vw - 25px);
 }
 
-.flex-justify-centre {
+.flex-justify-centre,
+.flex-justify-center {
     display: flex;
     justify-content: center;
 }
