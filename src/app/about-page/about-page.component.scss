@@ -1,0 +1,40 @@
+.about {
+    .about-text {
+        >p {
+            text-align: justify;
+            text-indent: 3rem;
+        }
+    }
+
+    .pen-image {
+        position: absolute;
+        object-fit: scale-down;
+        width: 100%;
+        right: -150px;
+        top: -90%;
+    }
+}
+
+.neg-mt-20-percent {
+    margin-top: -20%;
+}
+
+@media (max-width: 768px) {
+
+    .flex-justify-end,
+    .flex-justify-start {
+        justify-content: center;
+    }
+
+    .pen-image {
+        display: none;
+    }
+
+    .empty-col {
+        display: none;
+    }
+
+    .neg-mt-20-percent{
+        margin-top: 0%;
+    }
+}
