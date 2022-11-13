@@ -14,6 +14,7 @@ import { WebsiteBasePageComponent } from './projects/website-base-page/website-b
 import { AssetsPageComponent } from './assets-page/assets-page.component';
 import { WebsiteListComponent } from './projects/website-list/website-list.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LogoListComponent } from './projects/logo-list/logo-list.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     WebsiteBasePageComponent,
     AssetsPageComponent,
     WebsiteListComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LogoListComponent
   ],
   imports: [
     BrowserModule,

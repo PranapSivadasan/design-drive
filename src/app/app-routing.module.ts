@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LogoListComponent } from './projects/logo-list/logo-list.component';
 import { WebsiteListComponent } from './projects/website-list/website-list.component';
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'websites',
     component: WebsiteListComponent
+  },
+  {
+    path: 'logos',
+    component: LogoListComponent
   }
 ];
 
