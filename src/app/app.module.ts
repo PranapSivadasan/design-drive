@@ -12,6 +12,8 @@ import { LogoBasePageComponent } from './projects/logo-base-page/logo-base-page.
 import { ProductBasePageComponent } from './projects/product-base-page/product-base-page.component';
 import { WebsiteBasePageComponent } from './projects/website-base-page/website-base-page.component';
 import { AssetsPageComponent } from './assets-page/assets-page.component';
+import { WebsiteListComponent } from './projects/website-list/website-list.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AssetsPageComponent } from './assets-page/assets-page.component';
     LogoBasePageComponent,
     ProductBasePageComponent,
     WebsiteBasePageComponent,
-    AssetsPageComponent
+    AssetsPageComponent,
+    WebsiteListComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
