@@ -2,3 +2,9 @@
     transform: rotate(180deg);
     width: 75vw;
 }
+
+@media (max-width: 768px) {
+    .pen-x-rotate, .disp-md {
+        display: none;
+    }
+}

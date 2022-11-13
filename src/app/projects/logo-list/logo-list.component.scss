@@ -3,3 +3,9 @@
     right: -5rem;
     transform: scale(0.75);
 }
+
+@media (max-width: 768px) {
+    .pen-horizontal-right, .disp-md {
+        display: none;
+    }
+}
