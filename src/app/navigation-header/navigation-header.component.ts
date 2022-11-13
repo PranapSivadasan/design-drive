@@ -30,11 +30,11 @@ export class NavigationHeaderComponent implements OnInit {
         hyperlink: '#about',
         isActive: false
       },
-      {
-        displayName: 'contact',
-        hyperlink: '#contact',
-        isActive: false
-      },
+      // {
+      //   displayName: 'contact',
+      //   hyperlink: '#contact',
+      //   isActive: false
+      // },
       {
         displayName: 'assets',
         hyperlink: '#assets',
