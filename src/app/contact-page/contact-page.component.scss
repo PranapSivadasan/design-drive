@@ -1,0 +1,88 @@
+.contact-page {
+    .form-container {
+        height: 73vh;
+    }
+
+    .pen-image {
+        position: absolute;
+        object-fit: scale-down;
+        width: 25%;
+        left: 25px;
+        top: -50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .pen-image {
+        display: none;
+    }
+
+    .form-container {
+        height: 50vh !important;
+    }
+}
+
+.form-control {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px white;
+    color: white;
+}
+
+@mixin icon-btn {
+    color: white !important;
+    text-decoration: none;
+    padding: 0 0.25rem 0.25rem 0.25rem;
+    background: transparent;
+    
+    &:hover {
+        background-color: rgb(256, 256, 256, 0.2) !important;
+    }
+}
+
+.fb-icon-btn {
+    @include icon-btn();
+    &::after {
+        content: url('../../assets/icons/facebook.svg');
+        position: relative;
+        top: 6px;
+    }
+}
+
+.whatsapp-icon-btn {
+    @include icon-btn();
+    &::after {
+        content: url('../../assets/icons/whatsapp.svg');
+        position: relative;
+        top: 6px;
+    }
+}
+
+.instagram-icon-btn {
+    @include icon-btn();
+    &::after {
+        content: url('../../assets/icons/instagram.svg');
+        position: relative;
+        top: 6px;
+    }
+}
+
+.behance-icon-btn {
+    @include icon-btn();
+    &::after {
+        content: url('../../assets/icons/behance.svg');
+        position: relative;
+        top: 6px;
+    }
+}
+
+.linkedin-icon-btn {
+    @include icon-btn();
+    &::after {
+        content: url('../../assets//icons/linkedin.svg');
+        position: relative;
+        top: 6px;
+    }
+}

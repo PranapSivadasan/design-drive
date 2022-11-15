@@ -1,3 +1,60 @@
-<section>
-    <p>contact-page works!</p>
+<section class="full-height contact-page">
+    <div class="row">
+        <div class="col-12 flex-justify-center mt-3">
+            <h3><strong>YOU GOT SOMETHING?</strong></h3>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+            <div style="position: relative;">
+                <div class="flex-justify-centre">
+                    <img src="assets/DESIGN_DRIVE.png" alt="Design Drive Logo" class="mt-5">
+                </div>
+                <div class="flex-justify-center mt-1">
+                    <button class="fb-icon-btn"
+                        (click)="openNewTab('https://www.facebook.com/thedesigndrive')"></button>
+                    <button class="behance-icon-btn"
+                        (click)="openNewTab('https://www.behance.net/thedesigndrive')"></button>
+                    <button class="instagram-icon-btn"
+                        (click)="openNewTab('https://www.instagram.com/thedesign_drive/')"></button>
+                    <button class="linkedin-icon-btn"
+                        (click)="openNewTab('https://www.linkedin.com/in/design-drive/')"></button>
+                </div>
+                <img src="assets/pen.png" alt="Pen" [height]="400" class="pen-image">
+            </div>
+        </div>
+        <div class="col-12 col-md-6 form-container">
+            <div class="row align-content-center flex-justify-center h-100">
+                <div class="col-10">
+                    <h4 class="flex-justify-center">Lets Talk !</h4>
+                    <form [formGroup]="contactForm" (ngSubmit)="sendMail()">
+                        <div class="form-control-group mt-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input id="name" class="form-control" type="text" formControlName="name" />
+                        </div>
+                        <div class="form-control-group mt-3">
+                            <label for="mail" class="form-label">E-mail</label>
+                            <input id="mail" type="text" class="form-control" formControlName="email" />
+                        </div>
+                        <div class="form-control-group mt-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" rows="3" type="text" class="form-control" formControlName="message">
+                            </textarea>
+                        </div>
+                        <div class="form-control-group mt-3">
+                            <a href="mailto:connect@designdrive.art?body=Name - {{contactForm.value.name}} %0A%0aEmail - {{contactForm.value.email}} %0A%0a{{contactForm.value.message}}"
+                                type="button" class="btn btn-light">
+                                Send
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 flex-justify-center">Privacy Policy</div>
+        <div class="col-4 flex-justify-center">&#169; 2022 DESIGN DRIVE</div>
+        <div class="col-4 flex-justify-center">Terms & Conditions</div>
+    </div>
 </section>
