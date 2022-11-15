@@ -1,6 +1,6 @@
 {
   "name": "design-drive",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "404": "cp ./docs/index.html ./docs/404.html",
-    "gensite": "ng build --output-path ./docs && npm run 404"
+    "CNAME": "cp ./docs/assets/CNAME ./docs/CNAME",
+    "gensite": "ng build --output-path ./docs && npm run 404 && npm run CNAME"
   },
   "private": true,
   "dependencies": {
